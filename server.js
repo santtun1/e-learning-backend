@@ -12,7 +12,10 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('Server is running!');
 });
-
+app.get('/api/test', (req, res) => {
+    res.send('Test route works!');
+  });
+  
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
